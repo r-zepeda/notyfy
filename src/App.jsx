@@ -11,8 +11,10 @@ function App() {
         <main>
           <MainNav />
           <div className="main-body">
-            <h1 className="main-greeting">Hello, Ralph.</h1>
-            <h1 className="sub-greeting">How may I help you today?</h1>
+            <div className="main-greeting-container">
+              <p className="main-greeting">Hello, Ralph.</p>
+              <p className="sub-greeting">How may I help you today?</p>
+            </div>
           </div>
         </main>
       </div>
