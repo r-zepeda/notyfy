@@ -1,0 +1,149 @@
+.sidenav {
+    background-color: var(--clr-mainbg-light);
+    height: 100%;
+    width: 400px;
+    padding: 1.5rem;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidenav-controls {
+    padding-block: 1rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.nav-title {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidenav.collapsed {
+    width: 100px;
+    .nav-title {
+        width: 0px;
+        overflow: hidden;
+    }
+
+    .new-page-text {
+        display: none;
+    }
+
+    .new-page {
+        width: 50px;
+    }
+
+    .sidenav-pages {
+        overflow: hidden;
+        width: 0px;
+    }
+
+}
+
+.sidenav-pages {
+    width: 100%;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    margin-bottom: 2rem;
+}
+
+.nav-burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    background-color : rgb(47, 48, 49, 0);
+    cursor: pointer;
+    margin-right: 0.75rem;
+}
+
+.nav-burger:hover {
+    background-color : rgb(47, 48, 49, 1);
+}
+
+.menu-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.sidenav-controls {
+    width: 100%;
+    height: auto;
+}
+
+.new-page {
+    border-radius: 50px;
+    height: 50px;
+    width: 150px;
+    padding-inline: 1rem;
+    padding-block: 0.75rem;
+    border: none;
+    background-color: var(--clr-highlight);
+    color: #fff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.new-page:hover {
+    background-color: var(--clr-highlight-light);
+}
+
+.new-page-text {
+    width: 100px;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    text-wrap: nowrap;
+}
+
+.plus-icon {
+    height: 20px;
+    width: 20px;
+    font-weight: 800;
+}
+
+.pages-title {
+    font-weight: 600;
+    width: 100%;
+    padding-inline: 1rem;
+    padding-block-end: 1rem;
+}
+
+.pages {
+    height: auto;
+    width: 100%;
+    padding-block: 0.25rem;
+    padding-inline: 1rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.pages:hover {
+    background-color: var(--clr-highlight);
+}
+
+
+/* FOR MAIN NAV */
+
+.main-nav {
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+}
+
+.main-nav > * {
+    padding-block: 0.25rem;
+}

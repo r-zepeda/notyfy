@@ -1,27 +1,22 @@
 import './App.css';
+import './styles/main.css';
+import SideNav from './components/side-nav';
+import MainNav from './components/main-nav';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.jsx</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <div className='dashboard'>
+        <SideNav />
+        <main>
+          <MainNav />
+          <div className='main-body'>
+            <h1 className='main-greeting'>Hello, Ralph.</h1>
+            <h1 className='sub-greeting'>How can I help you today?</h1>
+          </div>
+        </main>
+      </div>
+
     </div>
   );
 }
